@@ -1,9 +1,9 @@
 import {Component, createEffect, createSignal} from 'solid-js';
 
 import logo from './logo.svg';
-import styles from './App.module.css';
+import styles from './index.module.css';
 
-const App: Component = () => {
+export const Test: Component = () => {
   const [count, setCount] = createSignal(0);
   const [double, setDouble] = createSignal(0);
   
@@ -40,5 +40,3 @@ const App: Component = () => {
       </div>
   );
 };
-
-export default App;
